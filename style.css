@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f3f5f9;
+    color: #243047;
+}
+
+header,
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #243b64;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 30px auto;
+}
+
+.panel {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #2855a6;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover:not(:disabled) {
+    background: #193b79;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd2df;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#submit-btn {
+    margin-top: 16px;
+}
+
+#status {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#status.success {
+    color: #176b38;
+    background: #e4f6e9;
+}
+
+#status.error {
+    color: #a3212b;
+    background: #fde8e8;
+}
+
+#notes-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.note {
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #dce2ec;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.note h3 {
+    margin-top: 0;
+}
+
+.note p {
+    white-space: pre-wrap;
+}
+
+.empty-state {
+    color: #687386;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .panel {
+        padding: 16px;
+    }
+}
